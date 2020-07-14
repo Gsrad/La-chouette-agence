@@ -508,8 +508,15 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    transition: background-color 500ms;
 }
-
+.form-control:focus{
+    border: 2px solid #DFE166;
+}
+#email:not(:focus):invalid {
+    background-color: #EC96A4;
+    border: 2px solid #EC96A4;
+    color: #fff; }
 .scrollToTop {
     width: 40px;
     height: 40px;
