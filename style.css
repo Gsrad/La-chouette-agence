@@ -512,10 +512,14 @@ button {
     transition: border 50ms;
 }
 
-#email:not(:focus):invalid {
+#email:focus:invalid {
     background-color: #EC96A4;
     border: 2px solid #EC96A4;
     color: #fff; }
+    #email:focus:valid{
+        background-color: green;
+        color: #fff;
+    }
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -828,7 +832,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
